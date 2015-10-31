@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.io.*;
 
 /**
  * Created by vishal on 6/24/15.
@@ -7,30 +8,27 @@ public class UVA531 {
 
     public  static void main(String[] args)
     {
-        String p;
-        String q;
+        FileReader in;
 
-        Scanner reader = new Scanner(System.in);
+        String p = "";
+        String q = "";
+        String b;
 
-        String b = reader.nextLine();
-        p = b;
-        while ( true )
-        {
-            b = reader.nextLine();
-            if (b.equals("#")) break;
-            p += b;
+        try {
+
+            //in = new FileReader("UVA531.txt");
+            Scanner reader = new Scanner(System.in);
+
+            while ( !(b = reader.nextLine()).equals("#") ) {
+                p += b;
+            }
+
+            while ( !(b = reader.nextLine()).equals("#") ) {
+                q += b;
+            }
+
+        }catch (Exception e){
+
         }
-
-        b = reader.nextLine();
-        q = b;
-        while ( true )
-        {
-            b = reader.nextLine();
-            if (b.equals("#")) break;
-            q += b;
-        }
-
-
-
     }
 }
