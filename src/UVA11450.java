@@ -1,3 +1,5 @@
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
 import java.util.Scanner;
 
 /**
@@ -5,24 +7,48 @@ import java.util.Scanner;
  */
 public class UVA11450 {
 
-    public static void  main( Stringp[] args) {
+    public static void  main( String[] args) {
 
         Scanner in = new Scanner(System.in);
         //read no of test cases
         int t = in.nextInt();
-        int models[][] =int[20][20];
+        int price[][] = new int[25][25];
+        Boolean reachable[][]  = new Boolean[25][210];
+
 
         while (t-- > 0) {
 
-            int m = in.nextInt();
-            int g = in.nextInt();
+            int M = in.nextInt();
+            int C = in.nextInt();
 
-            for (int i = 0; i < g; i++) {
-                int k = in.nextInt();
-                for (int j = 0; j < k; j++) {
-                    models[i][j] = in.nextInt();
+            for (int g = 0; g < C; g++) {
+                price[g][0] = in.nextInt();
+                for (int money = 0; money < price[g][0]; money++) {
+                    price[g][money] = in.nextInt();
                 }
             }
+
+
+            for ( int g = 1 ; g <= price[0][0] ; g++ ){
+                if ( M - price[0][g] > 0){
+                    reachable[0][M-price[0][g]] = true;
+                }
+            }
+
+            for ( int g = 1; g <= C; g++ ) {
+                for ( int money = 0 ; money < M ; money ++){
+                    if (reachable[g-1][money]){
+                        for ( int k =1 ; k <= price[g][0]; k++ ) {
+                            if (money - price[g][k] >= 0) {
+                                reachable[g][money - price[g][k]] = true;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
         }
 
 
