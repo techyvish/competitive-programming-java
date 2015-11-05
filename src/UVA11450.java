@@ -13,14 +13,13 @@ public class UVA11450 {
         Scanner in = new Scanner(System.in);
         //read no of test cases
         int t = in.nextInt();
-        int price[][] = new int[25][25];
-        Boolean reachable[][]  = new Boolean[25][210];
-        //Arrays.fill(reachable,false);
-        for ( int i = 0 ; i < 25 ; i++){
-            Arrays.fill(reachable[i],false);
-        }
-
         while (t-- > 0) {
+            int price[][] = new int[25][25];
+            Boolean reachable[][]  = new Boolean[25][210];
+
+            for ( int i = 0 ; i < 25 ; i++){
+                Arrays.fill(reachable[i],false);
+            }
 
             int M = in.nextInt();
             int C = in.nextInt();
