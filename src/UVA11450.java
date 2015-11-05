@@ -1,5 +1,6 @@
 import com.sun.org.apache.xpath.internal.operations.Bool;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -14,7 +15,10 @@ public class UVA11450 {
         int t = in.nextInt();
         int price[][] = new int[25][25];
         Boolean reachable[][]  = new Boolean[25][210];
-
+        //Arrays.fill(reachable,false);
+        for ( int i = 0 ; i < 25 ; i++){
+            Arrays.fill(reachable[i],false);
+        }
 
         while (t-- > 0) {
 
@@ -23,7 +27,7 @@ public class UVA11450 {
 
             for (int g = 0; g < C; g++) {
                 price[g][0] = in.nextInt();
-                for (int money = 0; money < price[g][0]; money++) {
+                for (int money = 1; money <= price[g][0]; money++) {
                     price[g][money] = in.nextInt();
                 }
             }
@@ -36,22 +40,28 @@ public class UVA11450 {
             }
 
             for ( int g = 1; g <= C; g++ ) {
-                for ( int money = 0 ; money < M ; money ++){
-                    if (reachable[g-1][money]){
-                        for ( int k =1 ; k <= price[g][0]; k++ ) {
+                for (int money = 0; money < M; money++) {
+                    if (reachable[g - 1][money]) {
+                        for (int k = 1; k <= price[g][0]; k++) {
                             if (money - price[g][k] >= 0) {
                                 reachable[g][money - price[g][k]] = true;
                             }
                         }
                     }
                 }
-
             }
 
 
+            int money = 0;
+            for ( money = 0 ; money <= M  && !reachable[C-1][money] ; money++ );
+
+            if ( money == M + 1 ){
+                System.out.println("no solution");
+            }else {
+                System.out.println(M-money);
+            }
+
         }
-
-
 
     }
 }
