@@ -1,4 +1,29 @@
 import com.sun.org.apache.xpath.internal.operations.Bool;
+/* sample I/O
+
+Sample Input
+3
+100 4
+3 8 6 4
+2 5 10
+4 1 3 3 7
+4 50 14 23 8
+20 3
+3 4 6 8
+2 5 10
+4 1 3 5 5
+5 3
+3 6 4 8
+2 10 6
+4 7 3 1 7
+
+Sample Output
+75
+19
+no solution
+
+*/
+
 
 import java.util.Arrays;
 import java.util.Scanner;
