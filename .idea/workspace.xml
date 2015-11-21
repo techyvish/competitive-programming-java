@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9d332432-8761-482d-9a05-662fd478a784" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UVA507.java" afterPath="$PROJECT_DIR$/src/UVA507.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="competitive-programming-java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,10 +40,10 @@
       <file leaf-file-name="UVA507.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UVA507.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5458105">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.39937353">
+              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
               <folding>
-                <element signature="e#0#664#0" expanded="true" />
+                <element signature="e#0#678#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -978,10 +977,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UVA507.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5458105">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.39937353">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
           <folding>
-            <element signature="e#0#664#0" expanded="true" />
+            <element signature="e#0#678#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
