@@ -28,7 +28,7 @@ public class UVA507 {
                     sum = 0;
                     start = i;
                 }
-                
+
             }
 
         }

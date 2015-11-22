@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java-quick-reference/Java-quick-reference.iml" filepath="$PROJECT_DIR$/Java-quick-reference/Java-quick-reference.iml" />
       <module fileurl="file://$PROJECT_DIR$/SRM 144 DIV 2/SRM 144 DIV 2.iml" filepath="$PROJECT_DIR$/SRM 144 DIV 2/SRM 144 DIV 2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SRM 173 DIV 1/SRM 173 DIV 1.iml" filepath="$PROJECT_DIR$/SRM 173 DIV 1/SRM 173 DIV 1.iml" />
       <module fileurl="file://$PROJECT_DIR$/competitive-programming-java.iml" filepath="$PROJECT_DIR$/competitive-programming-java.iml" />
