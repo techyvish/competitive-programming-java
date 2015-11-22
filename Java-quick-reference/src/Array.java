@@ -105,7 +105,7 @@ public class  Array {
         Machine m2 = new Machine("Arnie2");
 
         Thing aThing = new Thing();
-        
+
     }
 
 }
