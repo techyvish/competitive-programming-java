@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d332432-8761-482d-9a05-662fd478a784" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java-quick-reference/src/Collections/ArrayLists.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java-quick-reference/src/Exceptions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java-quick-reference/src/Collections/HashMaps.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java-quick-reference/src/Collections/LinkedLists.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java-quick-reference/src/Collections/Sets.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java-quick-reference/src/Collections/Sorts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Java-quick-reference/src/ReadingFile.java" afterPath="$PROJECT_DIR$/Java-quick-reference/src/ReadingFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Java-quick-reference/src/example.txt" afterPath="$PROJECT_DIR$/Java-quick-reference/src/example.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Java-quick-reference/src/Collections/NaturalOrder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="competitive-programming-java.iws" />
@@ -38,6 +31,9 @@
       <FILTER>Collections.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/competitive-programming-java$Array.coverage" NAME="Array Coverage Results" MODIFIED="1448179616901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/competitive-programming-java$NaturalOrder.coverage" NAME="NaturalOrder Coverage Results" MODIFIED="1448686797054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Collections.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/competitive-programming-java$uva10055.coverage" NAME="uva10055 Coverage Results" MODIFIED="1435642619751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/competitive-programming-java$Interfaces.coverage" NAME="Interfaces Coverage Results" MODIFIED="1448194457912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/competitive-programming-java$StringOperations.coverage" NAME="StringOperations Coverage Results" MODIFIED="1448193115827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -137,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sorts.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Sorts.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Java-quick-reference/src/Collections/Sorts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68421054">
-              <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="73" column="56" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#595#596#0" expanded="true" />
@@ -150,8 +146,26 @@
                 <element signature="e#810#811#0" expanded="true" />
                 <element signature="e#926#934#0" expanded="true" />
                 <element signature="e#1522#1531#0" expanded="true" />
-                <element signature="e#1823#1824#0" expanded="true" />
                 <element signature="e#1879#1880#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NaturalOrder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Java-quick-reference/src/Collections/NaturalOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44066048">
+              <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+              <folding>
+                <element signature="e#192#193#0" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#610#611#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+                <element signature="e#1426#1435#0" expanded="true" />
+                <element signature="e#1477#1486#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,6 +224,7 @@
         <option value="$PROJECT_DIR$/Java-quick-reference/src/Collections/HashMaps.java" />
         <option value="$PROJECT_DIR$/Java-quick-reference/src/Collections/Sets.java" />
         <option value="$PROJECT_DIR$/Java-quick-reference/src/Collections/Sorts.java" />
+        <option value="$PROJECT_DIR$/Java-quick-reference/src/Collections/NaturalOrder.java" />
       </list>
     </option>
   </component>
@@ -430,6 +445,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="competitive-programming-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="competitive-programming-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java-quick-reference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Collections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NaturalOrder.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -455,22 +496,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Sorts">
-    <configuration default="false" name="ReadingFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="ReadingFile" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Java-quick-reference" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.NaturalOrder">
     <configuration default="false" name="LinkedLists" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -539,6 +565,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="Collections.Sorts" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Java-quick-reference" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="NaturalOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Collections.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Collections.NaturalOrder" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -699,19 +745,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ReadingFile" />
-      <item index="1" class="java.lang.String" itemvalue="Application.LinkedLists" />
-      <item index="2" class="java.lang.String" itemvalue="Application.HashMaps" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Sets" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Sorts" />
+      <item index="0" class="java.lang.String" itemvalue="Application.LinkedLists" />
+      <item index="1" class="java.lang.String" itemvalue="Application.HashMaps" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Sets" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Sorts" />
+      <item index="4" class="java.lang.String" itemvalue="Application.NaturalOrder" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Sorts" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Sets" />
-        <item index="2" class="java.lang.String" itemvalue="Application.HashMaps" />
-        <item index="3" class="java.lang.String" itemvalue="Application.LinkedLists" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ReadingFile" />
+        <item index="0" class="java.lang.String" itemvalue="Application.NaturalOrder" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Sorts" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Sets" />
+        <item index="3" class="java.lang.String" itemvalue="Application.HashMaps" />
+        <item index="4" class="java.lang.String" itemvalue="Application.LinkedLists" />
       </list>
     </recent_temporary>
   </component>
@@ -739,7 +785,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925898" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37128714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37127578" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -794,7 +840,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="40" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -803,13 +849,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/UVA531.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/QuickFindUF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1226,8 +1265,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Java-quick-reference/src/Collections/Sorts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68421054">
-          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="56" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#595#596#0" expanded="true" />
@@ -1236,8 +1275,24 @@
             <element signature="e#810#811#0" expanded="true" />
             <element signature="e#926#934#0" expanded="true" />
             <element signature="e#1522#1531#0" expanded="true" />
-            <element signature="e#1823#1824#0" expanded="true" />
             <element signature="e#1879#1880#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java-quick-reference/src/Collections/NaturalOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44066048">
+          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+          <folding>
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#1426#1435#0" expanded="true" />
+            <element signature="e#1477#1486#0" expanded="true" />
           </folding>
         </state>
       </provider>
