@@ -10,10 +10,10 @@ public class UVA507 {
 
     public static void main(String[] args){
 
-        Scanner in = new Scanner();
+        Scanner in = new Scanner(System.in);
         int t = in.nextInt();
 
-        while ( t-- ) {
+        while ( t-- != 0) {
             int k = in.nextInt();
             int a[] = new int[k];
             int sum = 0, start = 0 ,ans =0;
