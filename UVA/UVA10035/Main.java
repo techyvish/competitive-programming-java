@@ -1,8 +1,5 @@
-package UVA.UVA10035;
+//package UVA.UVA10035;
 
-import com.sun.deploy.util.StringUtils;
-
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -11,39 +8,37 @@ import java.util.Scanner;
  */
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-        Integer a = in.nextInt();
-        Integer b = in.nextInt();
 
-        String as = a.toString();
-        String bs = b.toString();
+        Integer a = -1, b = -1;
+        while (true) {
+            a = in.nextInt();
+            b = in.nextInt();
 
-        String fs, ks;
-        if ( as.length() > bs.length()) {
-            char[] chars = new char[as.length()-bs.length()];
-            Arrays.fill(chars,'0');
-            String res = new String(chars);
-            fs = res+bs;
-            ks = as;
-        }else if ( as.length() < bs.length()) {
-            char[] chars = new char[bs.length()-as.length()];
-            Arrays.fill(chars,'0');
-            String res = new String(chars);
-            fs = res+as;
-            ks = bs;
-        }else {
-            fs = as;
-            ks = bs;
+            if ( a == 0 && b == 0 )
+                break;
+            int r= 0;
+            int c = 0;
+            while ( a != 0 || b != 0 ){
+                r = (a%10 + b%10 + r) / 10;
+                a = a/10;
+                b = b/10;
+                c += r;
+            }
+
+            if (c > 0) {
+                if (c == 1)
+                    System.out.println(c + " carry operation.");
+                else
+                    System.out.println(c + " carry operations.");
+            }
+            else {
+                System.out.println("No carry operation.");
+            }
+
         }
-
-        char [] P = fs.toCharArray();
-        char [] Q = ks.toCharArray();
-        for ( int i = fs.length() ; i >= 0 ; i--) {
-        
-        }
-
     }
 
 }
