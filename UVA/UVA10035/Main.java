@@ -1,4 +1,4 @@
-//package UVA.UVA10035;
+package UVA.UVA10035;
 
 import java.util.Arrays;
 import java.util.Scanner;
