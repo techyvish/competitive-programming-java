@@ -40,11 +40,11 @@ public class Main {
         charmap.put('D','S');
         charmap.put('F','D');
         charmap.put('G','F');
-        charmap.put('H','A');
-        charmap.put('J','S');
-        charmap.put('K','D');
-        charmap.put('L','F');
-        charmap.put(';','A');
+        charmap.put('H','G');
+        charmap.put('J','H');
+        charmap.put('K','J');
+        charmap.put('L','K');
+        charmap.put(';','L');
         charmap.put('\'',';');
         charmap.put('X','Z');
         charmap.put('C','X');
