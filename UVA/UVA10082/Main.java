@@ -1,4 +1,4 @@
-//package UVA.UVA10082;
+package UVA.UVA10082;
 
 import java.util.HashMap;
 import java.util.Scanner;
