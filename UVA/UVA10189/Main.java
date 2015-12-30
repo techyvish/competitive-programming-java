@@ -38,34 +38,100 @@ public class Main {
                     if ( mine[i][j] != '*' ){
                         if ( i == 0 && j == 0 ) {
                             if ( mine[i+1][j] == '*')
-                                    mine[i][j]++;
+                                mine[i][j]++;
                             if ( mine[i+1][j+1] == '*')
-                                    mine[i][j]++;
+                                mine[i][j]++;
                             if ( mine[i][j+1] == '*')
-                                    mine[i][j] ++;
+                                mine[i][j] ++;
                         }
-                        else if ( (i != 0 && j != a-1) && j == 0 ){
+                        else if ( i == 0 && j == b-1) {
+                            if ( mine[i][j-1] == '*')
+                                mine[i][j]++;
+                            if ( mine[i+1][j-1] == '*')
+                                mine[i][j]++;
                             if ( mine[i+1][j] == '*')
+                                mine[i][j] ++;
+
+                        }else if ( i == a-1 && j == b-1 ){
+                            if ( mine[i-1][j] == '*')
+                                mine[i][j]++;
+                            if ( mine[i-1][j-1] == '*')
+                                mine[i][j]++;
+                            if ( mine[i][j-1] == '*')
+                                mine[i][j] ++;
+                        }else if ( i == a-1 && j == 0 ){
+                            if ( mine[i-1][j] == '*')
+                                mine[i][j]++;
+                            if ( mine[i-1][j+1] == '*')
+                                mine[i][j]++;
+                            if ( mine[i][j+1] == '*')
+                                mine[i][j] ++;
+                        }
+                        else if ( (j != 0 && j != b-1) && i == 0 ){
+                            if ( mine[i][j+1] == '*')
                                 mine[i][j]++;
                             if ( mine[i+1][j+1] == '*')
                                 mine[i][j]++;
-                            if ( mine[i][j+1] == '*')
+                            if ( mine[i+1][j] == '*')
                                 mine[i][j] ++;
                             if ( mine[i-1][j+1] == '*')
                                 mine[i][j] ++;
-                            if ( mine[i-1][j] == '*')
-                                mine[i][j] ++;
-                        }else if ( i == 0 && (j != 0 && j!= b-1 ){
                             if ( mine[i][j-1] == '*')
                                 mine[i][j] ++;
-                            if ( mine[i+1][j-1] == '*')
+                        }
+                        else if ( j == 0 && (i != 0 && i!= a-1 )){
+                            if ( mine[i-1][j] == '*')
                                 mine[i][j] ++;
-                            if ( mine[i+1][j] == '*')
+                            if ( mine[i-1][j+1] == '*')
+                                mine[i][j] ++;
+                            if ( mine[i][j+1] == '*')
                                 mine[i][j]++;
                             if ( mine[i+1][j+1] == '*')
                                 mine[i][j]++;
+                            if ( mine[i+1][j] == '*')
+                                mine[i][j] ++;
+                        }
+
+                        else if ( (j != 0 && j != b-1) && i == a-1 ){
+                            if ( mine[i][j-1] == '*')
+                                mine[i][j]++;
+                            if ( mine[i-1][j-1] == '*')
+                                mine[i][j]++;
+                            if ( mine[i-1][j] == '*')
+                                mine[i][j] ++;
+                            if ( mine[i+1][j+1] == '*')
+                                mine[i][j] ++;
                             if ( mine[i][j+1] == '*')
                                 mine[i][j] ++;
+                        }
+                        else if ( j == b-1 && (i != 0 && i!= a-1 )) {
+                            if (mine[i - 1][j] == '*')
+                                mine[i][j]++;
+                            if (mine[i - 1][j - 1] == '*')
+                                mine[i][j]++;
+                            if (mine[i][j - 1] == '*')
+                                mine[i][j]++;
+                            if (mine[i + 1][j - 1] == '*')
+                                mine[i][j]++;
+                            if (mine[i + 1][j] == '*')
+                                mine[i][j]++;
+                        }else {
+                            if (mine[i - 1][j] == '*')
+                                mine[i][j]++;
+                            if (mine[i - 1][j + 1] == '*')
+                                mine[i][j]++;
+                            if (mine[i][j + 1] == '*')
+                                mine[i][j]++;
+                            if (mine[i + 1][j + 1] == '*')
+                                mine[i][j]++;
+                            if (mine[i + 1][j] == '*')
+                                mine[i][j]++;
+                            if (mine[i - 1][j+1] == '*')
+                                mine[i][j]++;
+                            if (mine[i][j - 1] == '*')
+                                mine[i][j]++;
+                            if (mine[i-1][j - 1] == '*')
+                                mine[i][j]++;
                         }
                     }
                 }
