@@ -1,4 +1,4 @@
-package UVA.onedmanop.uva11340;
+package UVA.onedmanip.uva11340;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -41,8 +41,6 @@ public class Main {
 
         }
 
-
     }
-
 
 }
